@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link href="FMstatspreview2.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+ </head>
+<body>
+
+<!--
+Frontend Mentor
+Stats Preview Card Component
+C Lewis
+clewisdev.com
+February 2022
+-->
+
+<style>
+
+@media (min-width: 1000px) {
+  .wrapper {
+    width: 1080px;
+    grid-template-columns: 540px 540px;
+    grid-template-areas: 
+      "title  image"
+      "desc   image"
+      "stats  image";     
+}
+
+.cardimage {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: .75em;
+}
+
+.title {
+  font-size: 2em;
+  text-align: left;
+  margin-left: 3rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+}
+
+.description {
+  text-align: left;
+  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.stats {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+}
+</style>
+
+<main id="wrapper" class="wrapper">  
+
+  <img src="images/image-header-mobile.jpg" class="cardimage" 
+  alt="people working in an office" width = 350>
+
+  <h1 id="title" class = "title">Get <strong id="insights" 
+    class="insights">insights</strong> that help your 
+    business grow.</h1>
+
+  <p id="description" class = "description">Discover the 
+    benefits of data analytics and make better decisions regarding 
+    revenue, customer experience, and overall efficiency.</p>
+
+  <section id="stats" class="stats">
+
+  <div id="numbers1" class="numbers1">
+    <p id="flex1"class="flex1">10k+</p>
+    <p id="flex2"class="flex2">companies</p>
+  </div>
+
+  <div id="numbers2" class="numbers2">
+    <p id="flex3"class="flex3">314</p>
+    <p id="flex4"class="flex4">templates</p>
+  </div>
+
+  <div id="numbers3" class="numbers3">
+    <p id="flex5"class="flex5">12m+</p>
+    <p id="flex6"class="flex6">queries</p>
+  </div>
+
+</section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+/*
+Frontend Mentor
+Stats Preview Card Component
+C Lewis
+clewisdev.com
+February 2022
+*/
+
+body {
+    background: hsl(233, 47%, 7%);
+    padding: 0;
+    margin: 0;
+}
+
+/****** GRID CONTAINER ******/
+
+.wrapper {
+    width: 350px;
+    background: hsl(244, 38%, 16%);
+    border-radius: .75rem;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-areas: 
+    "image"
+    "title"
+    "desc"
+    "stats";
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+
+}
+
+/****** GRID AREAS ******/
+
+.cardimage {
+    grid-area: image;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+
+.title {
+    grid-area: title;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.insights {
+    color: #aa5cdb; 
+}
+
+.description {
+    grid-area: desc;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.75rem;
+}
+
+.stats {
+    grid-area: stats;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-align: center;
+}
+
+/****** STATS HEADINGS ******/
+
+.flex1, .flex3, .flex5 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: .5rem;
+}
+
+/****** STATS DESCRIPTIONS ******/
+
+.flex2, .flex4, .flex6{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.4);
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: .25rem;
+    margin-bottom: 1.5rem;
+}
+
+/****** STATS LAYOUT ******/
+
+.numbers1, .numbers2, .numbers3 {
+    display: flex;
+    flex-direction: column;
+}
+
+/****** # Front-end Style Guide ******
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+*/
